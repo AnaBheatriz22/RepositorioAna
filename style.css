@@ -276,3 +276,93 @@ footer p {
   object-fit: cover;     
   display: block;
 }
+
+/* =========================
+   RESPONSIVO (CELULAR)
+========================= */
+@media (max-width: 768px) {
+  header {
+    padding: 1rem 6%;
+  }
+
+  nav {
+    flex-direction: column;
+    gap: 12px;
+  }
+
+  nav ul {
+    flex-wrap: wrap;
+    justify-content: center;
+    padding-top: 8px;
+  }
+
+  nav ul li {
+    margin-left: 1rem;
+    margin-right: 1rem;
+  }
+
+  .hero {
+    padding: 0 6%;
+    height: auto;
+    min-height: 100vh;
+  }
+
+  .hero-content h1 {
+    font-size: 2.2rem;
+  }
+
+  .hero-content p {
+    font-size: 1rem;
+  }
+
+  section {
+    padding: 80px 6%;
+  }
+
+  h2 {
+    font-size: 1.6rem;
+  }
+
+  .project-grid {
+    grid-template-columns: 1fr; /* 1 coluna no celular */
+    gap: 1.2rem;
+  }
+
+  .project-img {
+    height: 200px; /* menor no celular */
+  }
+
+  .project-info {
+    padding: 1rem;
+  }
+
+  .social-links a {
+    font-size: 26px;
+  }
+
+  footer {
+    padding: 2rem 6%;
+  }
+}
+
+/* =========================
+   RESPONSIVO (CELULAR PEQUENO)
+========================= */
+@media (max-width: 480px) {
+  .hero-content h1 {
+    font-size: 1.9rem;
+  }
+
+  .btn {
+    padding: 0.7rem 1.4rem;
+    font-size: 0.9rem;
+  }
+
+  nav ul li a {
+    font-size: 0.85rem;
+  }
+
+  .project-info p {
+    font-size: 0.85rem;
+  }
+}
